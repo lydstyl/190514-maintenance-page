@@ -3,15 +3,17 @@ html{
 }
 body{
     margin: 0;
-    background-color: #c6d1df;
+    /* background-color: #c6d1df; */
     font-size: 12px;
 }
 [src="./logo.png"]{
-    margin-bottom: 20px;
+    display: block;
+    margin: 20px auto;
 }
 .error-background {
     position: relative;
-    height: 363px;
+    height: 335px;
+    background-color: #c6d1df;
     background-image: url('./error-men.jpg');
     background-size: cover;
     background-position-y: center;
@@ -36,7 +38,7 @@ body{
 }
 @media screen and (min-width: 768px){
     .error-background {
-        background-size: contain;
+        height: 450px;
     }
     .error-text {
         position: relative;
@@ -45,10 +47,21 @@ body{
     }
 }
 @media screen and (min-width: 1024px){
+    .error-background {
+        height: 630px;
+    }
     .error-text {
         float: none;
         margin: auto;
         max-width: 490px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .error-background {
+        background-size: contain;
+    }
+    .error-text {
         background-color: transparent;
+        font-size: calc(18rem / 16);
     }
 }
